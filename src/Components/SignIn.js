@@ -13,7 +13,7 @@ function SignIn() {
 
   useEffect(() => {
     setValue(localStorage.getItem("email"));
-  });
+  }, []);
 
   const logout = () => {
     signOut(auth);
