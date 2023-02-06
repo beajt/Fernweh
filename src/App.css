@@ -19,16 +19,25 @@ body {
 .background {
   background-image:linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(/assets/ian-dooley-3NCA3tbaE5I-unsplash.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   width:100vw;
-  height: 100vh;
-
+  min-height: 100vh;
 }
 
 /* Photo by <a href="https://unsplash.com/es/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ian dooley</a> on <a href="https://unsplash.com/s/photos/map-flatlay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
 
+.signIn {
+  display: flex;
+  justify-content: right;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 form {
   padding-bottom: 30px;
@@ -48,13 +57,6 @@ h2 {
 
 h3 {
   font-weight: 400;
-}
-
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .countriesFlex {
