@@ -58,7 +58,6 @@ function Main() {
     auth.onAuthStateChanged((user) => {
       if (user) {
         // User is signed in.
-        var email = user.email;
         var currentUserId = auth.currentUser.uid;
         onValue(dbRef, (response) => {
           // use Firebase's .val() to parse our database info into the format we need
@@ -83,7 +82,6 @@ function Main() {
           }
           // set state to match no-longer-empty array
           setEntries(newState);
-
           setUserLogin(true);
         });
       }
