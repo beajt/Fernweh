@@ -3,7 +3,6 @@ import SignIn from "./SignIn";
 function Header() {
   return (
     <>
-        <SignIn />
         <div className="app">
         <h1>Fernweh</h1>
         <h2>/FEIRN-veyh/ - noun</h2>

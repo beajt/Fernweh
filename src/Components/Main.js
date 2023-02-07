@@ -29,8 +29,8 @@ function Main() {
     // get the information from our userInput State
     // send it off to our database using push
     push(dbRef, {
-      name: userInput,
-      landmark: "",
+      country: userInput,
+      city: "",
       userId: auth.currentUser.uid,
     });
     // reset the input after submitting by changing the state to empty string
@@ -38,7 +38,6 @@ function Main() {
   };
 
   const handleRemoveCountry = (entryId) => {
-    console.log = "removing country";
     // create a reference to our database
     const database = getDatabase(firebase);
     const dbRef = ref(database, `${entryId}`);
@@ -71,8 +70,8 @@ function Main() {
             if (currentUserId === data[key].userId) {
               newState.push({
                 key: key,
-                name: data[key].name,
-                landmark: data[key].landmark,
+                country: data[key].country,
+                city: data[key].city,
                 userId: data[key].userId,
               });
             }
@@ -92,7 +91,7 @@ function Main() {
     <div>
       {userlogin ? (
         <div className="app">
-          <form action="submit">
+          <form className="form" action="submit">
             <label htmlFor="newCountry">Countries I want to visit:</label>
             <input
               onChange={handleInputChange}
@@ -113,7 +112,7 @@ function Main() {
             {entries.map((entry) => {
               return (
                 <li className="countriesList" key={entry.key}>
-                  <p>{entry.name}</p>
+                  <p>{entry.country}</p>
                   <button onClick={() => handleRemoveCountry(entry.key)}>
                     x
                   </button>
@@ -121,8 +120,9 @@ function Main() {
               );
             })}
           </ul>
+          
         </div>
-      ) : null}
+      ) : <p className="app">Please sign in to start using the app</p>}
     </div>
   );
 }
