@@ -22,15 +22,13 @@ function SignIn() {
   };
 
   return (
-    <>
-      <div className="signIn">
-        {value ? (
-            <button onClick={logout}>Log Out</button>
-        ) : (
-          <button onClick={handleClick}>Sign In With Google</button>
-        )}
-      </div>
-    </>
+    <div className="signIn">
+      {value ? (
+        <button onClick={logout}>Log Out</button>
+      ) : (
+        <button onClick={handleClick}>Sign In With Google</button>
+      )}
+    </div>
   );
 }
 

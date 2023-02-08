@@ -6,7 +6,7 @@ import Main from "./Components/Main";
 
 function App() {
   return (
-      <div className="background">
+      <div className="background wrapper">
         <SignIn />
         <div className="box1">
           <Header />
