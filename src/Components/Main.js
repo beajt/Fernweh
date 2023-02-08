@@ -30,7 +30,6 @@ function Main() {
     // send it off to our database using push
     push(dbRef, {
       country: userInput,
-      city: "",
       userId: auth.currentUser.uid,
     });
     // reset the input after submitting by changing the state to empty string
@@ -71,7 +70,6 @@ function Main() {
               newState.push({
                 key: key,
                 country: data[key].country,
-                city: data[key].city,
                 userId: data[key].userId,
               });
             }

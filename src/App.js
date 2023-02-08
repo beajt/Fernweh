@@ -6,13 +6,13 @@ import Main from "./Components/Main";
 
 function App() {
   return (
-    <div className="background">
-      <SignIn />
-      <div className="box1">
-        <Header />
-        <Main />
+      <div className="background">
+        <SignIn />
+        <div className="box1">
+          <Header />
+          <Main />
+        </div>
       </div>
-    </div>
   );
 }
 
