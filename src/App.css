@@ -246,10 +246,19 @@ body {
   background-position: center;
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+/* Photo by Ian Dooley on Unsplash */
 
-/* Photo by <a href="https://unsplash.com/es/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ian dooley</a> on <a href="https://unsplash.com/s/photos/map-flatlay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
+.scroll {
+  margin: 4px, 4px;
+  padding: 4px;
+  max-height: 550px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
 
 .signIn {
   display: flex;
@@ -261,12 +270,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .box1 {
   background-color: rgba(255, 255, 255, 0.8);
   width: 400px;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 25px;
 }
 
@@ -345,11 +355,34 @@ button:active {
   opacity: 0.7;
 }
 
+/* FOOTER */
+
+.footerStyle {
+  background-color: #ededed;
+  text-align: center;
+  padding: 1px;
+  width: 100%;
+  margin-top: auto;
+}
+
+a {
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: #784605;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 450px) {
   .wrapper {
     width: 95%;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
   }
 
   .box1 {
