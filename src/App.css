@@ -358,7 +358,7 @@ button:active {
 /* FOOTER */
 
 .footerStyle {
-  background-color: #ededed;
+  background-color: rgba(255, 255, 255, 0.6);
   text-align: center;
   padding: 1px;
   width: 100%;
