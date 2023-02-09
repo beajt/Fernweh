@@ -378,7 +378,7 @@ a:focus {
 
 @media (max-width: 450px) {
   .wrapper {
-    width: 95%;
+    width: 100%;
   }
   
   h1 {

@@ -118,7 +118,6 @@ function Main() {
               );
             })}
           </ul>
-          
         </div>
       ) : <p className="app">Please sign in to start using the app</p>}
     </div>
