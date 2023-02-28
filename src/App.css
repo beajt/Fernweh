@@ -254,7 +254,7 @@ body {
 .scroll {
   margin: 4px, 4px;
   padding: 4px;
-  max-height: 650px;
+  max-height: 600px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align: justify;
@@ -281,7 +281,7 @@ body::-webkit-scrollbar-thumb {
 .box1 {
   background-color: rgba(255, 255, 255, 0.8);
   width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 25px;
 }
 
