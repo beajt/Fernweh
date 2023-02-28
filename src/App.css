@@ -254,7 +254,7 @@ body {
 .scroll {
   margin: 4px, 4px;
   padding: 4px;
-  max-height: 600px;
+  max-height: 650px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align: justify;
@@ -382,7 +382,7 @@ a:focus {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .wrapper {
     width: 100%;
   }
