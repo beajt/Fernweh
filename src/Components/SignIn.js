@@ -6,11 +6,11 @@ const authAnon = getAuth();
 signInAnonymously(authAnon)
   .then(() => {
     // signed in
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
   });
+  // .catch((error) => {
+  //   const errorCode = error.code;
+  //   const errorMessage = error.message;
+  // });
 
 function SignIn() {
   const [value, setValue] = useState("");
