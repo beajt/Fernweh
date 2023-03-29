@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { auth, provider } from "./firebase";
-import { signInWithPopup, signOut } from "firebase/auth";
+import { signInWithPopup, signOut, getAuth, signInAnonymously } from "firebase/auth";
+
+const authAnon = getAuth();
+signInAnonymously(authAnon)
+  .then(() => {
+    // signed in
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
 
 function SignIn() {
   const [value, setValue] = useState("");
