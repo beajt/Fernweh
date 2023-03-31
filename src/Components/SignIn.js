@@ -17,13 +17,9 @@ function SignIn() {
       .then(() => {
         setIsAnonymous(true);
       })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-      });
 
     setValue(localStorage.getItem("email"));
-  }, []);
+  }, [value]);
 
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
