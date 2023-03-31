@@ -340,6 +340,10 @@ select:focus-within {
   background: #dbd7d4;
 }
 
+.hide {
+  display: none;
+}
+
 button {
   display: block;
   margin: 10px;
